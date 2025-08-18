@@ -1,1 +1,1 @@
-# architecture-katas
+# Architecture Katas
