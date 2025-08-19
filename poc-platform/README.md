@@ -14,3 +14,20 @@ Mr. Bill wants a system to keep track of his favorite POCs. You need to build a 
 - No use of MongoDB.
 - Having a single relational database is not allowed.
 - No cloud providers other than AWS.
+
+## Requirements
+
+### Features
+
+1. Mobile app.
+1. Login.
+1. Save POCs.
+1. Search POCs by name, language, and tags.
+1. Generate reports.
+1. Generate a video with all the POCs the user have created over the course of a year.
+1. Real-time Dojos.
+
+### Other requirements
+
+1. Multi-tenancy.
+1. Brazilian.
