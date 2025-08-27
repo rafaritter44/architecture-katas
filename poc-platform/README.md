@@ -24,7 +24,7 @@ Mr. Bill wants a system to keep track of his favorite POCs. You need to build a 
 1. Save POCs.
 1. Search POCs by name, language, and tags.
 1. Generate reports.
-1. Generate a video with all the POCs the user have created over the course of a year.
+1. Generate a video with all the POCs the user has created over the course of a year.
 1. Real-time Dojos.
 
 ### Other requirements
