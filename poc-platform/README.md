@@ -39,10 +39,13 @@ Mr. Bill wants a system to keep track of his favorite POCs. You need to build a 
 1. Mobile app
 1. Web app
 1. Auth service
+1. Billing service
 1. POC service
 1. Repository integration service
 1. Snapshot processor
 1. Search service
+1. Analytics processor
+1. Analytics service
 1. Report service
 1. Video compilation service
 1. Dojo service
