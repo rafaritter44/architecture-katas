@@ -45,6 +45,6 @@ Mr. Bill wants a system to keep track of his favorite POCs. You need to build a 
 1. Snapshot processor
 1. Report service
 1. Report processor
-1. Video service
-1. Video processor
+1. Video generation service
+1. Video generation processor
 1. Dojo service
