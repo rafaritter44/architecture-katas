@@ -36,15 +36,24 @@ Mr. Bill wants a system to keep track of his favorite POCs. You need to build a 
 
 ### Components
 
-1. Mobile app
-1. Web app
-1. Auth service
-1. Billing service
-1. POC service
-1. OAuth token service
-1. Snapshot processor
-1. Report service
-1. Report processor
-1. Video generation service
-1. Video generation processor
-1. Dojo service
+![Components](diagrams/components.png)
+
+### Access
+
+![Access](diagrams/access.png)
+
+### POC upload
+
+![POC upload](diagrams/poc-upload.png)
+
+### Report & video generation
+
+![Report & video generation](diagrams/report-and-video-generation.png)
+
+### Dojo
+
+![Dojo](diagrams/dojo.png)
+
+### POC service ERD
+
+![POC service ERD](diagrams/poc-service-erd.png)
