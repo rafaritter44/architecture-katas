@@ -21,3 +21,7 @@ You can't use:
 1. OpenShift.
 1. Mainframes.
 1. Monolithic solutions.
+
+## Solution
+
+![Architecture](diagrams/architecture.png)
