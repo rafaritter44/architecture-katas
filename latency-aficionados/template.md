@@ -129,16 +129,5 @@ Describe your stack, what databases would be used, what servers, what kind of co
 
 ### 🖹 12. References
 
-* [Architecture Anti-Patterns](https://architecture-antipatterns.tech/)
-* [Enterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com/)
-* [SOA Patterns](https://patterns.arcitura.com/soa-patterns)
-* [Microservice API Patterns](https://microservice-api-patterns.org/)
-* [Software Development Anti-Patterns](https://sourcemaking.com/antipatterns/software-development-antipatterns)
-* [Refactoring Patterns](https://sourcemaking.com/refactoring/refactorings)
-* [Database Refactoring Patterns](https://databaserefactoring.com/)
-* [Data Modelling Redis](https://redis.com/blog/nosql-data-modeling/)
-* [Cloud Design Patterns](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/introduction.html)
-* [12 Factors App](https://12factor.net/)
-* [Relational DB Patterns](https://www.geeksforgeeks.org/design-patterns-for-relational-databases/)
-* [Rendering Patterns](https://www.patterns.dev/vanilla/rendering-patterns/)
-* [REST API Design Patterns](https://blog.stoplight.io/api-design-patterns-for-rest-web-services)
+- [Postgres Full Text Search vs the rest](https://supabase.com/blog/postgres-full-text-search-vs-the-rest)
+- [Postgres Full Text Search](https://gist.github.com/cpursley/e3586382c3a42c54ca7f5fef1665be7b)
