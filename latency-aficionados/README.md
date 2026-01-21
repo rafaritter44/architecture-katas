@@ -16,3 +16,8 @@ flowchart TD
     RS --> RDB[(Recommendation DB)]
     PDB -.->|Outbox Events| RDB
 ```
+
+Outbox Table
+- Run deletes in batches
+- Autovacuum tuned for this table
+- Lower fillfactor
