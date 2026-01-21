@@ -21,3 +21,8 @@ Outbox Table
 - Run deletes in batches
 - Autovacuum tuned for this table
 - Lower fillfactor
+
+-- Local progress marker
+recommendation_ingestion_state (
+  last_processed_id BIGINT NOT NULL
+);
