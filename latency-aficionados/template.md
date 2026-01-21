@@ -131,3 +131,4 @@ Describe your stack, what databases would be used, what servers, what kind of co
 
 - [Postgres Full Text Search vs the rest](https://supabase.com/blog/postgres-full-text-search-vs-the-rest)
 - [Postgres Full Text Search](https://gist.github.com/cpursley/e3586382c3a42c54ca7f5fef1665be7b)
+- [Postgres Logical Replication](https://www.postgresql.org/docs/current/logical-replication.html)
