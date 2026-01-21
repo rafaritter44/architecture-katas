@@ -134,3 +134,4 @@ Describe your stack, what databases would be used, what servers, what kind of co
 - [Postgres Logical Replication](https://www.postgresql.org/docs/current/logical-replication.html)
 - [TimescaleDB Retention Policy](https://www.tigerdata.com/docs/use-timescale/latest/data-retention/create-a-retention-policy)
 - [TimescaleDB Continuous Aggregates](https://www.tigerdata.com/docs/use-timescale/latest/continuous-aggregates)
+- [pg_cron](https://github.com/citusdata/pg_cron)
