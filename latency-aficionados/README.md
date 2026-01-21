@@ -10,6 +10,9 @@ Our CTO, Mr. Fast, wants the smallest latencies possible. He cares deeply about 
 
 ```mermaid
 flowchart TD
-    A(Web App) -->|Uses| B[Product Service]
-    B --> C[(Product Database)]
+    WA(Web App) --> PS[Product Service]
+    PS --> PDB[(Product DB)]
+    WA --> RS[Recommendation Service]
+    RS --> RDB[(Recommendation DB)]
+    PDB -.->|Outbox Events| RDB
 ```
