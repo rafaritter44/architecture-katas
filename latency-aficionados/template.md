@@ -1,23 +1,12 @@
-# 🧬 Template
+# Latency Aficionados
 
-This is a template created by Diego Pacheco which the goal to better describe a tought process which is called architecture. This should be used to learn software architecture and to pratice with use cases.
+## 1. Problem Statement and Context
 
-## 🏛️ Structure
+Latency Aficionados is a retro video game marketplace where users can sell retro video games and can also buy such video games. The platform is capable of posting products, searching products, viewing product descriptions, rating products with reviews and comments, and also providing product recommendations to users based on previous browsing.
 
-### 1. 🎯 Problem Statement and Context
+Our CTO, Mr. Fast, wants the smallest latencies possible. He cares deeply about how things render and how fast they render. Right now, the whole website is running on React 16. You need to find ways to speed up rendering and ensure rendering is fast at all times. Mr. Fast also has a monolith written in Java 1.4 that needs to be migrated to Java 25. You need to propose a decomposition of the monolith.
 
-What is the problem? What is the context of the problem?
-Example:
-```
-The problem is to sell shoes online, the main issue with buying shoes online is 
-how we will make our users buy shoes if they cannot make them fit? We would need
-to have a huge selectio and find ways to people find they perpect show at the 
-same time market teams would need to change campains all the time, we need to
-have way to make things fast and dynamic.
-```
-Recomended Reading: [Breaking problems down](http://diego-pacheco.blogspot.com/2021/10/breaking-problems-down.html)
-
-### 2. 🎯 Goals
+## 2. Goals
 
 List in form of bullets what goals do have. Here it's great to have 5-10 lines.
 Example:
@@ -30,7 +19,7 @@ Example:
 ```
 Recommended Learning: [Education vs Learning](http://diego-pacheco.blogspot.com/2020/05/education-vs-learning.html)
 
-### 3. 🎯 Non-Goals
+## 3. Non-Goals
 
 List in form of bullets what non-goals do have. Here it's great to have 5-10 lines.
 Example:
@@ -43,7 +32,7 @@ Example:
 ```
 Recommended Reading: [Requirements are dangerous](http://diego-pacheco.blogspot.com/2021/01/requirements-are-dangerous.html)
 
-### 📐 3. Principles
+## 3. Principles
 
 List in form of bullets what design principles you want to be followed, it's great to have 5-10 lines.
 Example:
@@ -56,7 +45,7 @@ Example:
 ```
 Recommended Reading: [Stability principles](http://diego-pacheco.blogspot.com/2018/01/stability-principles.html)
 
-### 🏗️ 4. Overall Diagrams
+## 4. Overall Diagrams
 
 Here there will be a bunch of diagrams, to understand the solution.
 ```
@@ -66,7 +55,7 @@ Here there will be a bunch of diagrams, to understand the solution.
 ```
 Recommended Reading: [UML hidden gems](http://diego-pacheco.blogspot.com/2020/10/uml-hidden-gems.html)
 
-### 🧭 5. Trade-offs
+## 5. Trade-offs
 
 List the tradeoffs analysis, comparing pros and cons for each major decision.
 Before you need list all your major decisions, them run tradeoffs on than.
@@ -93,7 +82,7 @@ CONS (+)
 PS: Be careful to not confuse problem with explanation. 
 <BR/>Recommended reading: [Tradeoffs](http://diego-pacheco.blogspot.com/2023/07/tradeoffs.html)
 
-### 🌏 6. For each key major component
+## 6. For each key major component
 
 What is a majore component? A service, a lambda, a important ui, a generalized approach for all uis, a generazid approach for computing a workload, etc...
 ```
@@ -107,27 +96,27 @@ Exemplos of other components: Batch jobs, Events, 3rd Party Integrations, Stream
 
 Recommended Reading: [Internal system design forgotten](http://diego-pacheco.blogspot.com/2018/05/internal-system-design-forgotten.html)
 
-### 🖹 7. Migrations
+## 7. Migrations
 
 IF Migrations are required describe the migrations strategy with proper diagrams, text and tradeoffs.
 
-### 🖹 8. Testing strategy
+## 8. Testing Strategy
 
 Explain the techniques, principles, types of tests and will be performaned, and spesific details how to mock data, stress test it, spesific chaos goals and assumptions.
 
-### 🖹 9. Observability strategy
+## 9. Observability Strategy
 
 Explain the techniques, principles,types of observability that will be used, key metrics, what would be logged and how to design proper dashboards and alerts.
 
-### 🖹 10. Data Store Designs
+## 10. Data Store Designs
 
 For each different kind of data store i.e (Postgres, Memcached, Elasticache, S3, Neo4J etc...) describe the schemas, what would be stored there and why, main queries, expectations on performance. Diagrams are welcome but you really need some dictionaries.
 
-### 🖹 11. Technology Stack
+## 11. Technology Stack
 
 Describe your stack, what databases would be used, what servers, what kind of components, mobile/ui approach, general architecture components, frameworks and libs to be used or not be used and why.
 
-### 🖹 12. References
+## 12. References
 
 - [Postgres Full Text Search vs the rest](https://supabase.com/blog/postgres-full-text-search-vs-the-rest)
 - [Postgres Full Text Search](https://gist.github.com/cpursley/e3586382c3a42c54ca7f5fef1665be7b)
