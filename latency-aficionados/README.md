@@ -17,6 +17,9 @@ config:
 flowchart TD
     WA(Web App)
 
+    AS[Auth Service]
+    ADB[(Auth DB)]
+
     PS[Product Service]
     PDB[(Product DB)]
 
@@ -28,10 +31,12 @@ flowchart TD
 
     PG[/Payment Gateway/]
 
+    WA --> AS
     WA --> PS
     WA --> RS
     WA --> OS
 
+    AS --> ADB
     PS --> PDB
     RS --> RDB
     OS --> ODB
