@@ -134,9 +134,16 @@ recommendation_ingestion_state (
 
 ## 12. Technology Stack
 
-TODO
-
-Describe your stack, what databases would be used, what servers, what kind of components, mobile/ui approach, general architecture components, frameworks and libs to be used or not be used and why.
+- Web App: TypeScript 5 + React 19
+- Auth Service: Java 25 + Spring Boot 4
+- Auth DB: Postgres 18
+- Product Service: Java 25 + Spring Boot 4
+- Product DB: Postgres 18
+- Order Service: Java 25 + Spring Boot 4
+- Order DB: Postgres 18
+- Recommendation Service: Python 3 + FastAPI
+- Recommendation DB: TimescaleDB
+- Payment Gateway: Stripe
 
 ## 13. References
 
