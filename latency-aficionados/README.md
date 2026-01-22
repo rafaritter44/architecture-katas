@@ -8,16 +8,11 @@ Our CTO, Mr. Fast, wants the smallest latencies possible. He cares deeply about 
 
 ## 2. Goals
 
-List in form of bullets what goals do have. Here it's great to have 5-10 lines.
-Example:
-```
-1. Solution needs to be fast! Performance for all operations bellow ~1 ms.
-2. Security is non-negociable! Security at-rest, transite, threat analysis and review for by at least 3 different people.
-3. Composable solution. Users should be able to mix and match components instead of building all for scratch. ie: map component can be reused on counters component.
-4. Work offline: Re-consiliation, CRDTs are a must.
-5. Cloud-Native: All backend must be 100% cloud native, using open-source and should and should be cloud-agnostic, avoid propretaty apis.
-```
-Recommended Learning: [Education vs Learning](http://diego-pacheco.blogspot.com/2020/05/education-vs-learning.html)
+1. **Low latency UX**: Fast rendering and fast responses for all user-facing interactions.
+2. **Strong correctness for money and inventory**: Buying and selling operations must be strongly consistent, transactional, and auditable, ensuring correctness under concurrency and partial failures.
+3. **Clear service boundaries**: Each service owns its data and business rules, avoiding shared databases and tight coupling between components.
+4. **Incremental monolith decomposition**: Gradually migrate from the existing Java 1.4 monolith to the new services.
+5. **Avoid over-engineering**: Whenever possible, favor technologies and patterns that are easier to operate, debug, and reason about in production.
 
 ## 3. Non-Goals
 
