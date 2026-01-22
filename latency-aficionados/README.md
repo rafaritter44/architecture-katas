@@ -15,14 +15,24 @@ flowchart TD
     PS[Product Service]
     PDB[(Product DB)]
 
+    OS[Order Service]
+    ODB[(Order DB)]
+
     RS[Recommendation Service]
     RDB[(Recommendation DB)]
 
+    PG[/Payment Gateway/]
+
     WA --> PS
     WA --> RS
+    WA --> OS
 
     PS --> PDB
     RS --> RDB
+    OS --> ODB
+
+    OS -->|Reserve/Release| PS
+    OS -->|Charge/Refund| PG
 
     PDB -.->|Outbox Events| RDB
 ```
