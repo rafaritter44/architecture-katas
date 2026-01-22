@@ -9,6 +9,11 @@ Our CTO, Mr. Fast, wants the smallest latencies possible. He cares deeply about 
 ## Solution
 
 ```mermaid
+---
+config:
+  flowchart:
+    curve: linear
+---
 flowchart TD
     WA(Web App)
 
