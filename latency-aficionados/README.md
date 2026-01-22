@@ -80,6 +80,9 @@ TODO
 
 ## 6. Trade-offs
 
+1. Postgres FTS vs. Elasticsearch
+2. Logical Replication vs. Debezium
+
 TODO
 
 ## 7. For each key major component
