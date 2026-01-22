@@ -20,7 +20,7 @@ Our CTO, Mr. Fast, wants the smallest latencies possible. He cares deeply about 
 2. **Big-bang migration**: It's not our goal to migrate the code all at once.
 3. **Over-engineering**: We should avoid premature optimization and operational complexity if not strictly necessary to meet our goals.
 
-## 3. Principles
+## 4. Principles
 
 List in form of bullets what design principles you want to be followed, it's great to have 5-10 lines.
 Example:
@@ -32,9 +32,9 @@ Example:
 5. Cache efficiency: Should leverage SSD caches and all forms of caches as much as possible.
 ```
 
-## 4. Overall Diagrams
+## 5. Overall Diagrams
 
-### 4.1. Overall Architecture
+### 5.1. Overall Architecture
 
 ```mermaid
 ---
@@ -75,11 +75,11 @@ flowchart TD
     PDB -.->|Outbox Events| RDB
 ```
 
-### 4.2. Deployment
+### 5.2. Deployment
 
-### 4.3. Use Cases
+### 5.3. Use Cases
 
-## 5. Trade-offs
+## 6. Trade-offs
 
 List the tradeoffs analysis, comparing pros and cons for each major decision.
 Before you need list all your major decisions, them run tradeoffs on than.
@@ -106,7 +106,7 @@ CONS (+)
 PS: Be careful to not confuse problem with explanation. 
 <BR/>Recommended reading: [Tradeoffs](http://diego-pacheco.blogspot.com/2023/07/tradeoffs.html)
 
-## 6. For each key major component
+## 7. For each key major component
 
 What is a majore component? A service, a lambda, a important ui, a generalized approach for all uis, a generazid approach for computing a workload, etc...
 ```
@@ -120,19 +120,19 @@ Exemplos of other components: Batch jobs, Events, 3rd Party Integrations, Stream
 
 Recommended Reading: [Internal system design forgotten](http://diego-pacheco.blogspot.com/2018/05/internal-system-design-forgotten.html)
 
-## 7. Migrations
+## 8. Migrations
 
 IF Migrations are required describe the migrations strategy with proper diagrams, text and tradeoffs.
 
-## 8. Testing Strategy
+## 9. Testing Strategy
 
 Explain the techniques, principles, types of tests and will be performaned, and spesific details how to mock data, stress test it, spesific chaos goals and assumptions.
 
-## 9. Observability Strategy
+## 10. Observability Strategy
 
 Explain the techniques, principles,types of observability that will be used, key metrics, what would be logged and how to design proper dashboards and alerts.
 
-## 10. Data Store Designs
+## 11. Data Store Designs
 
 For each different kind of data store i.e (Postgres, Memcached, Elasticache, S3, Neo4J etc...) describe the schemas, what would be stored there and why, main queries, expectations on performance. Diagrams are welcome but you really need some dictionaries.
 
@@ -146,11 +146,11 @@ recommendation_ingestion_state (
   last_processed_id BIGINT NOT NULL
 );
 
-## 11. Technology Stack
+## 12. Technology Stack
 
 Describe your stack, what databases would be used, what servers, what kind of components, mobile/ui approach, general architecture components, frameworks and libs to be used or not be used and why.
 
-## 12. References
+## 13. References
 
 - [Postgres Full Text Search vs the rest](https://supabase.com/blog/postgres-full-text-search-vs-the-rest)
 - [Postgres Full Text Search](https://gist.github.com/cpursley/e3586382c3a42c54ca7f5fef1665be7b)
