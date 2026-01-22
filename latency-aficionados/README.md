@@ -10,10 +10,20 @@ Our CTO, Mr. Fast, wants the smallest latencies possible. He cares deeply about 
 
 ```mermaid
 flowchart TD
-    WA(Web App) --> PS[Product Service]
-    PS --> PDB[(Product DB)]
-    WA --> RS[Recommendation Service]
-    RS --> RDB[(Recommendation DB)]
+    WA(Web App)
+
+    PS[Product Service]
+    PDB[(Product DB)]
+
+    RS[Recommendation Service]
+    RDB[(Recommendation DB)]
+
+    WA --> PS
+    WA --> RS
+
+    PS --> PDB
+    RS --> RDB
+
     PDB -.->|Outbox Events| RDB
 ```
 
