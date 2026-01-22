@@ -72,36 +72,19 @@ flowchart TD
 
 ### 5.2. Deployment
 
+TODO
+
 ### 5.3. Use Cases
+
+TODO
 
 ## 6. Trade-offs
 
-List the tradeoffs analysis, comparing pros and cons for each major decision.
-Before you need list all your major decisions, them run tradeoffs on than.
-example:
-Major Decisions: 
-```
-1. One mobile code base - should be (...)
-2. Reusable capability and low latency backends should be (...)
-3. Cache efficiency therefore should do (...)
-```
-Tradeoffs:
-```
-1. React Native vs (Flutter and Native)
-2. Serverless vs Microservices
-3. Redis vs Enbeded Caches
-```
-Each tradeoff line need to be:
-```
-PROS (+) 
-  * Benefit: Explanation that justify why the benefit is true.
-CONS (+)
-  * Problem: Explanation that justify why the problem is true.
-```
-PS: Be careful to not confuse problem with explanation. 
-<BR/>Recommended reading: [Tradeoffs](http://diego-pacheco.blogspot.com/2023/07/tradeoffs.html)
+TODO
 
 ## 7. For each key major component
+
+TODO
 
 What is a majore component? A service, a lambda, a important ui, a generalized approach for all uis, a generazid approach for computing a workload, etc...
 ```
@@ -117,17 +100,25 @@ Recommended Reading: [Internal system design forgotten](http://diego-pacheco.blo
 
 ## 8. Migrations
 
+TODO
+
 IF Migrations are required describe the migrations strategy with proper diagrams, text and tradeoffs.
 
 ## 9. Testing Strategy
+
+TODO
 
 Explain the techniques, principles, types of tests and will be performaned, and spesific details how to mock data, stress test it, spesific chaos goals and assumptions.
 
 ## 10. Observability Strategy
 
+TODO
+
 Explain the techniques, principles,types of observability that will be used, key metrics, what would be logged and how to design proper dashboards and alerts.
 
 ## 11. Data Store Designs
+
+TODO
 
 For each different kind of data store i.e (Postgres, Memcached, Elasticache, S3, Neo4J etc...) describe the schemas, what would be stored there and why, main queries, expectations on performance. Diagrams are welcome but you really need some dictionaries.
 
@@ -142,6 +133,8 @@ recommendation_ingestion_state (
 );
 
 ## 12. Technology Stack
+
+TODO
 
 Describe your stack, what databases would be used, what servers, what kind of components, mobile/ui approach, general architecture components, frameworks and libs to be used or not be used and why.
 
