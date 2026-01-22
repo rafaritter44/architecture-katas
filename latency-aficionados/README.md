@@ -12,7 +12,7 @@ Our CTO, Mr. Fast, wants the smallest latencies possible. He cares deeply about 
 2. **Strong correctness for money and inventory**: Buying and selling operations must be strongly consistent, transactional, and auditable, ensuring correctness under concurrency and partial failures.
 3. **Clear service boundaries**: Each service owns its data and business rules, avoiding shared databases and tight coupling between components.
 4. **Incremental monolith decomposition**: Gradually migrate from the existing Java 1.4 monolith to the new services.
-5. **Keep it simple, stupid**: Whenever possible, favor technologies and patterns that are easier to operate, debug, and reason about in production.
+5. **Simplicity over complexity**: Whenever possible, favor technologies and patterns that are easier to operate, debug, and reason about in production.
 
 ## 3. Non-Goals
 
@@ -22,15 +22,10 @@ Our CTO, Mr. Fast, wants the smallest latencies possible. He cares deeply about 
 
 ## 4. Principles
 
-List in form of bullets what design principles you want to be followed, it's great to have 5-10 lines.
-Example:
-```
-1. Low Coupling: We need to watch for coupling all times.
-2. Flexibility: Users should be able to customize behavior without leaking the internals of the system. Leverage interfaces.
-3. Observability: we should expose all key metrics on main features. Sucess and errors counters need to be exposed.
-4. Testability: Chaos engineering is a must and property testing. Testing should be done by engineers all times.
-5. Cache efficiency: Should leverage SSD caches and all forms of caches as much as possible.
-```
+1. **KISS (Keep It Simple, Stupid)**: Strive for the simplest solution that meets the requirements.
+2. **YAGNI (You Aren't Going to Need It)**: Don't add more components to the architecture, unless you have to.
+3. **Modularity**: The system should be composed of well-defined, loosely coupled modules.
+4. **Correctness**: The system should be correct, consistent, and free of bugs.
 
 ## 5. Overall Diagrams
 
