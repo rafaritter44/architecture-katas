@@ -12,20 +12,13 @@ Our CTO, Mr. Fast, wants the smallest latencies possible. He cares deeply about 
 2. **Strong correctness for money and inventory**: Buying and selling operations must be strongly consistent, transactional, and auditable, ensuring correctness under concurrency and partial failures.
 3. **Clear service boundaries**: Each service owns its data and business rules, avoiding shared databases and tight coupling between components.
 4. **Incremental monolith decomposition**: Gradually migrate from the existing Java 1.4 monolith to the new services.
-5. **Avoid over-engineering**: Whenever possible, favor technologies and patterns that are easier to operate, debug, and reason about in production.
+5. **Keep it simple, stupid**: Whenever possible, favor technologies and patterns that are easier to operate, debug, and reason about in production.
 
 ## 3. Non-Goals
 
-List in form of bullets what non-goals do have. Here it's great to have 5-10 lines.
-Example:
-```
-1. Be perfect: There will be mistakes, we dont want have automatic-rollback for everything.
-2. DynamoDB: Dynamo is expensive, we want be away from the DB.
-3. Serverless: Serverless has high latency, we do not want to use it.
-4. Mobile-native: We want have one single codebase, therefore we will not have 2 mobile code bases(ios and android) thefore be native is not a goal.
-5. ...
-```
-Recommended Reading: [Requirements are dangerous](http://diego-pacheco.blogspot.com/2021/01/requirements-are-dangerous.html)
+1. **Single, shared database**: Services will not share databases or schemas, even if this would simplify some queries.
+2. **Big-bang migration**: It's not our goal to migrate the code all at once.
+3. **Over-engineering**: We should avoid premature optimization and operational complexity if not strictly necessary to meet our goals.
 
 ## 3. Principles
 
@@ -38,7 +31,6 @@ Example:
 4. Testability: Chaos engineering is a must and property testing. Testing should be done by engineers all times.
 5. Cache efficiency: Should leverage SSD caches and all forms of caches as much as possible.
 ```
-Recommended Reading: [Stability principles](http://diego-pacheco.blogspot.com/2018/01/stability-principles.html)
 
 ## 4. Overall Diagrams
 
