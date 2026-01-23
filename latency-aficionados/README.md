@@ -91,15 +91,20 @@ architecture-beta
     service rs(server)[Recommendation Service] in ecs
     service rdb(database)[Recommendation DB] in vpc
 
-    alb:R --> L:as
-    alb:R --> L:ps
-    alb:R --> L:os
-    alb:R --> L:rs
+    junction jCenter in ecs
+    junction jRight in ecs
 
-    as:R --> L:adb
-    ps:R --> L:pdb
-    os:R --> L:odb
-    rs:R --> L:rdb
+    alb:R -- L:jCenter
+    as:B -- T:jCenter
+    os:T -- B:jCenter
+    jCenter:R -- L:jRight
+    ps:B -- T:jRight
+    rs:T -- B:jRight
+
+    as:T --> B:adb
+    ps:T --> B:pdb
+    os:B --> T:odb
+    rs:B --> T:rdb
 ```
 
 ### 5.3. Use Cases
