@@ -72,7 +72,35 @@ flowchart TD
 
 ### 5.2. Deployment
 
-TODO
+```mermaid
+architecture-beta
+    group vpc(logos:aws-vpc)[VPC]
+    group ecs(logos:aws-ecs)[ECS] in vpc
+
+    service alb(logos:aws-elb)[ALB] in vpc
+
+    service as(logos:aws-ecs)[Auth Service] in ecs
+    service adb(logos:aws-rds)[Auth DB] in vpc
+
+    service ps(logos:aws-ecs)[Product Service] in ecs
+    service pdb(logos:aws-rds)[Product DB] in vpc
+
+    service os(logos:aws-ecs)[Order Service] in ecs
+    service odb(logos:aws-rds)[Order DB] in vpc
+
+    service rs(logos:aws-ecs)[Recommendation Service] in ecs
+    service rdb(database)[Recommendation DB] in vpc
+
+    alb:B --> T:as
+    alb:B --> T:ps
+    alb:B --> T:os
+    alb:B --> T:rs
+
+    as:B --> T:adb
+    ps:B --> T:pdb
+    os:B --> T:odb
+    rs:B --> T:rdb
+```
 
 ### 5.3. Use Cases
 
