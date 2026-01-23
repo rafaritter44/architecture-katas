@@ -77,7 +77,7 @@ architecture-beta
     group vpc(cloud)[VPC]
     group ecs(server)[ECS] in vpc
 
-    service alb(server)[Application Load Balancer] in vpc
+    service alb(server)[ALB] in vpc
 
     service as(server)[Auth Service] in ecs
     service adb(database)[Auth DB] in vpc
@@ -91,15 +91,15 @@ architecture-beta
     service rs(server)[Recommendation Service] in ecs
     service rdb(database)[Recommendation DB] in vpc
 
-    alb:B --> T:as
-    alb:B --> T:ps
-    alb:B --> T:os
-    alb:B --> T:rs
+    alb:R --> L:as
+    alb:R --> L:ps
+    alb:R --> L:os
+    alb:R --> L:rs
 
-    as:B --> T:adb
-    ps:B --> T:pdb
-    os:B --> T:odb
-    rs:B --> T:rdb
+    as:R --> L:adb
+    ps:R --> L:pdb
+    os:R --> L:odb
+    rs:R --> L:rdb
 ```
 
 ### 5.3. Use Cases
