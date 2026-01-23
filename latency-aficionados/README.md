@@ -77,6 +77,9 @@ architecture-beta
     group vpc(cloud)[VPC]
     group ecs(server)[ECS] in vpc
 
+    service cdn(cloud)[CloudFront Distribution]
+    service s3(database)[Web App S3 Bucket]
+
     service alb(server)[ALB] in vpc
 
     service as(server)[Auth Service] in ecs
@@ -93,6 +96,9 @@ architecture-beta
 
     junction jCenter in ecs
     junction jRight in ecs
+
+    cdn:L --> R:s3
+    cdn:R --> L:alb
 
     alb:R -- L:jCenter
     as:B -- T:jCenter
