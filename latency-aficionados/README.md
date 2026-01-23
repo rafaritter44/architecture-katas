@@ -122,6 +122,7 @@ TODO
 
 1. Postgres FTS vs. Elasticsearch
 2. Logical Replication vs. Debezium
+3. ECS vs. EKS
 
 TODO
 
