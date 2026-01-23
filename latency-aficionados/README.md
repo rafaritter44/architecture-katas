@@ -74,11 +74,12 @@ flowchart TD
 
 ```mermaid
 architecture-beta
-    group vpc(cloud)[VPC]
+    group aws(cloud)[AWS]
+    group vpc(cloud)[VPC] in aws
     group ecs(server)[ECS] in vpc
 
-    service cdn(cloud)[CloudFront Distribution]
-    service s3(database)[Web App S3 Bucket]
+    service cdn(cloud)[CloudFront Distribution] in aws
+    service s3(database)[Web App S3 Bucket] in aws
 
     service alb(server)[ALB] in vpc
 
