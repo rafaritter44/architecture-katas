@@ -189,4 +189,5 @@ recommendation_ingestion_state (
 - [TimescaleDB Jobs](https://www.tigerdata.com/docs/use-timescale/latest/jobs/create-and-manage-jobs)
 - [TimescaleDB Retention Policy](https://www.tigerdata.com/docs/use-timescale/latest/data-retention/create-a-retention-policy)
 - [TimescaleDB Continuous Aggregates](https://www.tigerdata.com/docs/use-timescale/latest/continuous-aggregates)
+- [TimescaleDB on AWS](https://www.tigerdata.com/blog/recommendations-for-setting-up-your-architecture-with-aws-timescaledb)
 - [pg_cron](https://github.com/citusdata/pg_cron)
