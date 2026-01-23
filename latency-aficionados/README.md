@@ -77,7 +77,7 @@ architecture-beta
     group vpc(cloud)[VPC]
     group ecs(server)[ECS] in vpc
 
-    service alb(server)[ALB] in vpc
+    service alb(server)[Application Load Balancer] in vpc
 
     service as(server)[Auth Service] in ecs
     service adb(database)[Auth DB] in vpc
