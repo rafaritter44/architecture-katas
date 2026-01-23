@@ -74,21 +74,21 @@ flowchart TD
 
 ```mermaid
 architecture-beta
-    group vpc(logos:aws-vpc)[VPC]
-    group ecs(logos:aws-ecs)[ECS] in vpc
+    group vpc(cloud)[VPC]
+    group ecs(server)[ECS] in vpc
 
-    service alb(logos:aws-elb)[ALB] in vpc
+    service alb(server)[ALB] in vpc
 
-    service as(logos:aws-ecs)[Auth Service] in ecs
-    service adb(logos:aws-rds)[Auth DB] in vpc
+    service as(server)[Auth Service] in ecs
+    service adb(database)[Auth DB] in vpc
 
-    service ps(logos:aws-ecs)[Product Service] in ecs
-    service pdb(logos:aws-rds)[Product DB] in vpc
+    service ps(server)[Product Service] in ecs
+    service pdb(database)[Product DB] in vpc
 
-    service os(logos:aws-ecs)[Order Service] in ecs
-    service odb(logos:aws-rds)[Order DB] in vpc
+    service os(server)[Order Service] in ecs
+    service odb(database)[Order DB] in vpc
 
-    service rs(logos:aws-ecs)[Recommendation Service] in ecs
+    service rs(server)[Recommendation Service] in ecs
     service rdb(database)[Recommendation DB] in vpc
 
     alb:B --> T:as
