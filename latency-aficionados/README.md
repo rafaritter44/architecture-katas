@@ -101,10 +101,10 @@ architecture-beta
     ps:B -- T:jRight
     rs:T -- B:jRight
 
-    as:T --> B:adb
-    ps:T --> B:pdb
-    os:B --> T:odb
-    rs:B --> T:rdb
+    as:L --> R:adb
+    ps:R --> L:pdb
+    os:L --> R:odb
+    rs:R --> L:rdb
 ```
 
 ### 5.3. Use Cases
