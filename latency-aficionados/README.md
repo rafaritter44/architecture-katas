@@ -147,7 +147,7 @@ flowchart LR
 
 TODO
 
-## 7. For each key major component
+## 7. For each major component
 
 TODO
 
