@@ -151,7 +151,8 @@ TODO
 
 TODO
 
-What is a majore component? A service, a lambda, a important ui, a generalized approach for all uis, a generazid approach for computing a workload, etc...
+What is a major component? A service, a lambda, an important UI, a generalized approach for all UIs, a generalized approach for computing a workload, etc.
+
 ```
 6.1 - Class Diagram              : classic uml diagram with attributes and methods
 6.2 - Contract Documentation     : Operations, Inputs and Outputs
@@ -159,7 +160,7 @@ What is a majore component? A service, a lambda, a important ui, a generalized a
 6.4 - Algorithms/Data Structures : Spesific algos that need to be used, along size with spesific data structures.
 ```
 
-Exemplos of other components: Batch jobs, Events, 3rd Party Integrations, Streaming, ML Models, ChatBots, etc... 
+Exemplos of other components: Batch jobs, Events, 3rd Party Integrations, Streaming, ML Models, ChatBots, etc.
 
 Recommended Reading: [Internal system design forgotten](http://diego-pacheco.blogspot.com/2018/05/internal-system-design-forgotten.html)
 
