@@ -139,23 +139,6 @@ flowchart LR
   b --- rp2((Rate product))
 ```
 
-Both
-- Sign up
-- Log in
-
-Seller
-- Add product
-- Edit product
-- Remove product
-
-Buyer
-- View product catalog
-- Search for products
-- View product recommendations
-- View product details
-- Buy product
-- Rate product
-
 ## 6. Trade-offs
 
 1. Postgres FTS vs. Elasticsearch
