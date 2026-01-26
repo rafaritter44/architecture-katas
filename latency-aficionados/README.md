@@ -160,7 +160,7 @@ What is a major component? A service, a lambda, an important UI, a generalized a
 6.4 - Algorithms/Data Structures : Spesific algos that need to be used, along size with spesific data structures.
 ```
 
-Exemplos of other components: Batch jobs, Events, 3rd Party Integrations, Streaming, ML Models, ChatBots, etc.
+Exemples of other components: Batch jobs, Events, 3rd Party Integrations, Streaming, ML Models, ChatBots, etc.
 
 ## 8. Migrations
 
