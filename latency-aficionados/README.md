@@ -162,8 +162,6 @@ What is a major component? A service, a lambda, an important UI, a generalized a
 
 Exemplos of other components: Batch jobs, Events, 3rd Party Integrations, Streaming, ML Models, ChatBots, etc.
 
-Recommended Reading: [Internal system design forgotten](http://diego-pacheco.blogspot.com/2018/05/internal-system-design-forgotten.html)
-
 ## 8. Migrations
 
 TODO
