@@ -116,7 +116,22 @@ architecture-beta
 
 ### 5.3. Use Cases
 
-TODO
+Both
+- Sign up
+- Log in
+
+Seller
+- Add product
+- Edit product
+- Remove product
+
+Buyer
+- View product catalog
+- Search for products
+- View product recommendations
+- View product details
+- Buy product
+- Rate product
 
 ## 6. Trade-offs
 
