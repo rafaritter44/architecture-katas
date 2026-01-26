@@ -118,25 +118,25 @@ architecture-beta
 
 ```mermaid
 flowchart LR
-  s([👤 Seller])
-  b([👤 Buyer])
+  s((👤 Seller))
+  b((👤 Buyer))
 
-  su((Sign up))
-  li((Log in))
+  su([Sign up])
+  li([Log in])
 
   s --- su --- b
   s --- li --- b
 
-  s --- ap((Add product))
-  s --- ep((Edit product))
-  s --- rp((Remove product))
+  s --- ap([Add product])
+  s --- ep([Edit product])
+  s --- rp([Remove product])
 
-  b --- vpc((View product catalog))
-  b --- sfp((Search for products))
-  b --- vpr((View product recommendations))
-  b --- vpd((View product details))
-  b --- bp((Buy product))
-  b --- rp2((Rate product))
+  b --- vpc([View product catalog])
+  b --- sfp([Search for products])
+  b --- vpr([View product recommendations])
+  b --- vpd([View product details])
+  b --- bp([Buy product])
+  b --- rp2([Rate product])
 ```
 
 ## 6. Trade-offs
