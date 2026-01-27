@@ -224,6 +224,16 @@ Explain the techniques, principles,types of observability that will be used, key
 | PK, FK   | role                    | text        | The role name.               |
 |          | user_role_creation_date | timestamptz | The user role creation date. |
 
+### 11.2. Product DB
+
+**Table 1: product**
+
+**Table 2: inventory**
+
+**Table 3: review**
+
+**Table 4: outbox_event**
+
 Outbox Table
 - Run deletes in batches
 - Autovacuum tuned for this table
