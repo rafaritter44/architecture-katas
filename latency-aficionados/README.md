@@ -182,9 +182,47 @@ Explain the techniques, principles,types of observability that will be used, key
 
 ## 11. Data Store Designs
 
-TODO
+### 11.1. Auth DB
 
-For each different kind of data store i.e (Postgres, Memcached, Elasticache, S3, Neo4J etc...) describe the schemas, what would be stored there and why, main queries, expectations on performance. Diagrams are welcome but you really need some dictionaries.
+**Table 1: user**
+
+| Key type | Column             | Type        | Description             |
+| -------- | ------------------ | ----------- | ----------------------- |
+| PK       | user_email         | text        | The user email address. |
+|          | user_creation_date | timestamptz | The user creation date. |
+
+**Table 2: user_credential**
+
+| Key type | Column         | Type        | Description                         |
+| -------- | -------------- | ----------- | ----------------------------------- |
+| PK, FK   | user_email     | text        | The user email address.             |
+|          | password_hash  | text        | The password hash.                  |
+|          | salt           | text        | The salt used to hash the password. |
+|          | pw_update_date | timestamptz | The last password update date.      |
+
+**Table 3: refresh_token**
+
+| Key type | Column                | Type        | Description                        |
+| -------- | --------------------- | ----------- | ---------------------------------- |
+| PK       | token_hash            | text        | The refresh token hash.            |
+| FK       | user_email            | text        | The user email address.            |
+|          | token_creation_time   | timestamptz | The refresh token creation time.   |
+|          | token_expiration_time | timestamptz | The refresh token expiration time. |
+
+**Table 4: role**
+
+| Key type | Column             | Type        | Description             |
+| -------- | ------------------ | ----------- | ----------------------- |
+| PK       | role               | text        | The role name.          |
+|          | role_creation_date | timestamptz | The role creation date. |
+
+**Table 5: user_role**
+
+| Key type | Column                  | Type        | Description                  |
+| -------- | ----------------------- | ----------- | ---------------------------- |
+| PK, FK   | user_email              | text        | The user email address.      |
+| PK, FK   | role                    | text        | The role name.               |
+|          | user_role_creation_date | timestamptz | The user role creation date. |
 
 Outbox Table
 - Run deletes in batches
