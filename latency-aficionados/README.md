@@ -249,8 +249,10 @@ recommendation_ingestion_state (
 
 ## 13. References
 
-- [Postgres Full Text Search vs the rest](https://supabase.com/blog/postgres-full-text-search-vs-the-rest)
-- [Postgres Full Text Search](https://gist.github.com/cpursley/e3586382c3a42c54ca7f5fef1665be7b)
+- [Postgres FTS vs. the rest](https://supabase.com/blog/postgres-full-text-search-vs-the-rest)
+- [Postgres FTS](https://gist.github.com/cpursley/e3586382c3a42c54ca7f5fef1665be7b)
+- [Postgres FTS: Fast when done right (debunking the slow myth)](https://news.ycombinator.com/item?id=43627646)
+- [Postgres FTS: A search engine in a database](https://www.crunchydata.com/blog/postgres-full-text-search-a-search-engine-in-a-database)
 - [Postgres Logical Replication](https://www.postgresql.org/docs/current/logical-replication.html)
 - [TimescaleDB Jobs](https://www.tigerdata.com/docs/use-timescale/latest/jobs/create-and-manage-jobs)
 - [TimescaleDB Retention Policy](https://www.tigerdata.com/docs/use-timescale/latest/data-retention/create-a-retention-policy)
