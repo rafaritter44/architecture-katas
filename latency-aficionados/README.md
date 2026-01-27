@@ -205,7 +205,7 @@ recommendation_ingestion_state (
 - Product DB: Postgres 18
 - Order Service: Java 25 + Spring Boot 4
 - Order DB: Postgres 18
-- Recommendation Service: Python 3 + FastAPI
+- Recommendation Service: Java 25 + Spring Boot 4
 - Recommendation DB: TimescaleDB
 - Payment Gateway: Stripe
 
