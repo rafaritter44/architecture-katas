@@ -226,13 +226,27 @@ Explain the techniques, principles,types of observability that will be used, key
 
 ### 11.2. Product DB
 
-**Table 1: product**
+**Table 1: seller**
 
-**Table 2: inventory**
+| Key type | Column                   | Type        | Description                                          |
+| -------- | ------------------------ | ----------- | ---------------------------------------------------- |
+| PK       | seller_tax_id            | text        | The seller tax ID (e.g., SSN, ITIN, or EIN).         |
+|          | legal_name               | text        | The legal name of the company or individual seller.  |
+|          | display_name             | text        | How the seller name will be displayed in the system. |
+|          | seller_registration_date | timestamptz | The date the seller registered in the system.        |
 
-**Table 3: review**
+**Table 2: product_offer**
 
-**Table 4: outbox_event**
+| Key type | Column                | Type        | Description                                  |
+| -------- | --------------------- | ----------- | -------------------------------------------- |
+| PK, FK   | seller_tax_id         | text        | The seller tax ID (e.g., SSN, ITIN, or EIN). |
+| PK       | product_sku           | text        | The product SKU (Stock Keeping Unit).        |
+
+**Table 3: inventory**
+
+**Table 4: review**
+
+**Table 5: outbox_event**
 
 Outbox Table
 - Run deletes in batches
