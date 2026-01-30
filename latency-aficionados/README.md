@@ -256,10 +256,20 @@ Explain the techniques, principles,types of observability that will be used, key
 | PK, FK   | product_sku                 | text        | The product SKU (Stock Keeping Unit).        |
 | PK       | buyer_email                 | text        | The buyer email address.                     |
 | PK       | reservation_time            | timestamptz | The time the reservation was made.           |
-|          | quantity_reserved           | integer     | The number of product units reserved.        |                                |
+|          | quantity_reserved           | integer     | The number of product units reserved.        |
 |          | reservation_expiration_time | timestamptz | The time the reservation expires.            |
 
 **Table 4: product_review**
+
+| Key type | Column                  | Type        | Description                                   |
+| -------- | ----------------------- | ----------- | --------------------------------------------- |
+| PK, FK   | seller_tax_id           | text        | The seller tax ID (e.g., SSN, ITIN, or EIN).  |
+| PK, FK   | product_sku             | text        | The product SKU (Stock Keeping Unit).         |
+| PK       | buyer_email             | text        | The buyer email address.                      |
+|          | rating                  | integer     | The rating (1-5) given by the reviewer.       |
+|          | review_text             | text        | The review text written by the reviewer.      |
+|          | review_publication_date | timestamptz | The date the review was originally published. |
+|          | review_update_date      | timestamptz | The last time the review was updated.         |
 
 **Table 5: outbox_event**
 
