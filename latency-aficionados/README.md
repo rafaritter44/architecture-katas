@@ -263,6 +263,10 @@ recommendation_ingestion_state (
   last_processed_id BIGINT NOT NULL
 );
 
+### 11.3. Order DB
+
+### 11.4. Recommendation DB
+
 ## 12. Technology Stack
 
 - Web App: TypeScript 5 + React 19
