@@ -237,19 +237,16 @@ Explain the techniques, principles,types of observability that will be used, key
 
 **Table 2: product_offer**
 
-| Key type | Column              | Type           | Description                                  |
-| -------- | ------------------- | -------------- | -------------------------------------------- |
-| PK, FK   | seller_tax_id       | text           | The seller tax ID (e.g., SSN, ITIN, or EIN). |
-| PK       | product_sku         | text           | The product SKU (Stock Keeping Unit).        |
-|          | product_name        | text           | The product name.                            |
-|          | product_description | text           | The product description.                     |
-|          | price               | numeric(10, 2) | The product unit price in USD.               |
-|          | offer_creation_date | timestamptz    | The date the product offer was created.      |
-|          | offer_update_date   | timestamptz    | The last time the offer was updated.         |
-
-**Table 3: inventory**
-
-**Table 4: review**
+| Key type | Column              | Type           | Description                                   |
+| -------- | ------------------- | -------------- | --------------------------------------------- |
+| PK, FK   | seller_tax_id       | text           | The seller tax ID (e.g., SSN, ITIN, or EIN).  |
+| PK       | product_sku         | text           | The product SKU (Stock Keeping Unit).         |
+|          | product_name        | text           | The product name.                             |
+|          | product_description | text           | The product description.                      |
+|          | price               | numeric(10, 2) | The product unit price in USD.                |
+|          | quantity_in_stock   | integer        | The number of units of this product in stock. |
+|          | offer_creation_date | timestamptz    | The date the product offer was created.       |
+|          | offer_update_date   | timestamptz    | The last time the offer was updated.          |
 
 **Table 5: outbox_event**
 
