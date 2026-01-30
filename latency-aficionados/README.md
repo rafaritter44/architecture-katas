@@ -67,7 +67,7 @@ flowchart TD
     OS -->|Reserve/Release| PS
     OS -->|Charge/Refund| PG
 
-    PDB -.->|Outbox Events| RDB
+    PDB -.->|Buyer Events| RDB
 ```
 
 ### 5.2. Deployment
@@ -271,7 +271,16 @@ Explain the techniques, principles,types of observability that will be used, key
 |          | review_publication_date | timestamptz | The date the review was originally published. |
 |          | review_update_date      | timestamptz | The last time the review was updated.         |
 
-**Table 5: outbox_event**
+**Table 5: buyer_event**
+
+| Key type | Column        | Type        | Description                                                                 |
+| -------- | ------------- | ----------- | --------------------------------------------------------------------------- |
+| PK, FK   | seller_tax_id | text        | The seller tax ID (e.g., SSN, ITIN, or EIN).                                |
+| PK, FK   | product_sku   | text        | The product SKU (Stock Keeping Unit).                                       |
+| PK       | buyer_email   | text        | The buyer email address.                                                    |
+| PK       | event_time    | timestamptz | The time when the event occurred.                                           |
+|          | event_type    | text        | 'product_viewed', 'product_reserved', 'product_bought', 'product_reviewed'. |
+|          | event_data    | jsonb       | Data relevant to the event.                                                 |
 
 Outbox Table
 - Run deletes in batches
