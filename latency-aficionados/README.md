@@ -237,16 +237,29 @@ Explain the techniques, principles,types of observability that will be used, key
 
 **Table 2: product_offer**
 
-| Key type | Column              | Type           | Description                                   |
-| -------- | ------------------- | -------------- | --------------------------------------------- |
-| PK, FK   | seller_tax_id       | text           | The seller tax ID (e.g., SSN, ITIN, or EIN).  |
-| PK       | product_sku         | text           | The product SKU (Stock Keeping Unit).         |
-|          | product_name        | text           | The product name.                             |
-|          | product_description | text           | The product description.                      |
-|          | price               | numeric(10, 2) | The product unit price in USD.                |
-|          | quantity_in_stock   | integer        | The number of units of this product in stock. |
-|          | offer_creation_date | timestamptz    | The date the product offer was created.       |
-|          | offer_update_date   | timestamptz    | The last time the offer was updated.          |
+| Key type | Column              | Type           | Description                                  |
+| -------- | ------------------- | -------------- | -------------------------------------------- |
+| PK, FK   | seller_tax_id       | text           | The seller tax ID (e.g., SSN, ITIN, or EIN). |
+| PK       | product_sku         | text           | The product SKU (Stock Keeping Unit).        |
+|          | product_name        | text           | The product name.                            |
+|          | product_description | text           | The product description.                     |
+|          | price               | numeric(10, 2) | The product unit price in USD.               |
+|          | quantity_in_stock   | integer        | The number of product units in stock.        |
+|          | offer_creation_date | timestamptz    | The date the product offer was created.      |
+|          | offer_update_date   | timestamptz    | The last time the offer was updated.         |
+
+**Table 3: product_reservation**
+
+| Key type | Column                      | Type        | Description                                  |
+| -------- | --------------------------- | ----------- | -------------------------------------------- |
+| PK, FK   | seller_tax_id               | text        | The seller tax ID (e.g., SSN, ITIN, or EIN). |
+| PK, FK   | product_sku                 | text        | The product SKU (Stock Keeping Unit).        |
+| PK       | buyer_email                 | text        | The buyer email address.                     |
+| PK       | reservation_time            | timestamptz | The time the reservation was made.           |
+|          | quantity_reserved           | integer     | The number of product units reserved.        |                                |
+|          | reservation_expiration_time | timestamptz | The time the reservation expires.            |
+
+**Table 4: product_review**
 
 **Table 5: outbox_event**
 
