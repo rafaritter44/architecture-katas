@@ -286,6 +286,11 @@ Explain the techniques, principles,types of observability that will be used, key
 
 ### 11.4. Recommendation DB
 
+-- Local progress marker
+recommendation_ingestion_state (
+  last_processed_id BIGINT NOT NULL
+);
+
 ## 12. Technology Stack
 
 - Web App: TypeScript 5 + React 19
