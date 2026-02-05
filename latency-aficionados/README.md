@@ -282,6 +282,50 @@ Explain the techniques, principles,types of observability that will be used, key
 |          | event_type    | text        | 'product_viewed', 'product_reserved', 'product_bought', 'product_reviewed'. |
 |          | event_data    | jsonb       | Data relevant to the event.                                                 |
 
+**Query 1: View product catalog**
+
+```sql
+SELECT seller_tax_id,
+       product_sku,
+       product_name,
+       price
+FROM product_offer
+WHERE quantity_in_stock > 0
+ORDER BY offer_creation_date DESC
+LIMIT ? OFFSET ?;
+```
+
+Index
+- (offer_creation_date DESC)
+- Partial index where quantity_in_stock > 0
+
+**Query 2: Search for products**
+
+```sql
+SELECT seller_tax_id,
+       product_sku,
+       product_name,
+       price
+FROM product_offer
+WHERE search_vector @@ plainto_tsquery(?)
+ORDER BY ts_rank(search_vector, plainto_tsquery(?)) DESC
+LIMIT ?;
+```
+
+Index
+- GIN(search_vector)
+
+**Query 3: Get review summary**
+
+SELECT
+  AVG(rating) AS avg_rating,
+  COUNT(*)    AS review_count
+FROM product_review
+WHERE seller_tax_id = ?
+  AND product_sku = ?;
+
+(Materialized view)
+
 ### 11.3. Order DB
 
 ### 11.4. Recommendation DB
