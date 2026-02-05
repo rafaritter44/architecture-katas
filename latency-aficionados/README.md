@@ -282,16 +282,6 @@ Explain the techniques, principles,types of observability that will be used, key
 |          | event_type    | text        | 'product_viewed', 'product_reserved', 'product_bought', 'product_reviewed'. |
 |          | event_data    | jsonb       | Data relevant to the event.                                                 |
 
-Outbox Table
-- Run deletes in batches
-- Autovacuum tuned for this table
-- Lower fillfactor
-
--- Local progress marker
-recommendation_ingestion_state (
-  last_processed_id BIGINT NOT NULL
-);
-
 ### 11.3. Order DB
 
 ### 11.4. Recommendation DB
